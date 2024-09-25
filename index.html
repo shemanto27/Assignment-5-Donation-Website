@@ -8,17 +8,18 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="container m-auto">
+
     <!-- Nav Bar -->
     <section>
-        <div class="navbar bg-base-100 flex justify-between">
-            <div><a class="btn  bg-[#B4F461] px-7" id="blogLink">Blog</a></div>
-            <div><img src="/assets/logo.png" alt=""><p class="font-bold text-xl ml-5">Donate Bangladesh</p></div>
-            <div><img src="/assets/coin.png" alt=""><p><span id="myBalance">5500</span> BDT</p></div>
+        <div class="navbar bg-base-100 flex flex-col lg:flex-row justify-center lg:justify-between fixed top-0 z-20 w-full">
+            <div><a class="btn  bg-[#B4F461] px-7" href="/blog.html">Blog</a></div>
+            <div class=""><img src="/assets/logo.png" alt=""><p class="font-bold text-xl ml-5"><a href="/index.html">Donate Bangladesh</a></p></div>
+            <div class="lg:mr-36"><img src="/assets/coin.png" alt=""><p><span id="myBalance">5500</span> BDT</p></div>
         </div>
     </section>
 
     <!-- toggle Button -->
-    <section class="flex justify-center my-10">
+    <section class="flex justify-center mt-40 mb-10">
         <div>
             <button id="donationbtn" class="btn bg-[#B4F461] px-8" onclick="toogleBtn(donationsection, historySection, donationBtn, historyBtn)">Donation</button>
 
@@ -27,7 +28,7 @@
     </section>
 
     <!-- Donation Cards -->
-    <section class="my-5 space-y-8" id="donationsection">
+    <section class="space-y-8" id="donationsection">
         <!-- card-1 -->
         <div>
             <div class="card card-side bg-base-100 shadow-xl flex flex-col justify-center items-center lg:flex-row">
