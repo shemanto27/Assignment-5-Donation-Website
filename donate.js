@@ -32,6 +32,32 @@ function donate(amount,balance){
         balance.innerText = `${donationAmount} BDT`;
         myBalance.innerText = `${myTotalBalance - donationAmount}`;
         modal.showModal();
+
+        let toWhom = '';
+
+        if(amount.id === 'noakhaliInput'){
+            toWhom = 'flood-2024 at Noakhali';
+        }
+        else if(amount.id === 'feniInput'){
+            toWhom = 'Flood Relief in Feni';
+        }
+        else{
+            toWhom = 'Injured in the Quota Movement';
+        }
+
+        const currentDate = new Date();
+        dateNow = currentDate.toString();
+        
+        const historycard = document.createElement('div')
+        historycard.innerHTML = `
+        <div class="card bg-base-100 w-full shadow-xl">
+            <div class="card-body">
+            <h2 class="card-title">${donationAmount} Taka is Donated for ${toWhom}, Bangladesh</h2>
+            <p>Date : ${dateNow}</p>
+            </div>
+        </div>
+        `
+        historySection.appendChild(historycard);
     }
     else{
         alert('Invalid Donation Amount');
