@@ -8,6 +8,7 @@ const historySection = document.getElementById('historySection');
 
 const myBalance = document.getElementById('myBalance');
 const modal = document.getElementById('my_modal_1');
+document.getElementById("blogLink").href = "/blog.html";
 
 // Noakhali Elements
 const noakhaliInput = document.getElementById('noakhaliInput');
