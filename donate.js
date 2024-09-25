@@ -1,5 +1,10 @@
+// Toggle Elements
 const donationBtn = document.getElementById('donationbtn');
 const historyBtn = document.getElementById('historybtn');
+
+// Sections
+const donationsection = document.getElementById('donationsection');
+const historySection = document.getElementById('historySection');
 
 const myBalance = document.getElementById('myBalance');
 const modal = document.getElementById('my_modal_1');
@@ -31,5 +36,18 @@ function donate(amount,balance){
     else{
         alert('Invalid Donation Amount');
     }
+    
+}
+
+function toogleBtn(idshow, idremove, btnshow, btnremove){
+    idshow.classList.remove('hidden');
+    idremove.classList.add('hidden');
+
+    btnshow.classList.remove('bg-[#1111114D');
+    btnshow.classList.add('bg-[#B4F461]');
+
+    btnremove.classList.remove('bg-[#B4F461]');
+    btnremove.classList.add('bg-[#1111114D)');
+
     
 }

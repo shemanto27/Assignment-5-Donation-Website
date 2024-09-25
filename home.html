@@ -18,15 +18,16 @@
     </section>
 
     <!-- toggle Button -->
-    <section class="flex justify-center my-10>
+    <section class="flex justify-center my-10">
         <div>
-            <button id="donationbtn" class="btn bg-[#B4F461] px-8">Donation</button>
-            <button id="historybtn" class="btn bg-[rgba(17, 17, 17, 0.3)] px-8">History</button>
+            <button id="donationbtn" class="btn bg-[#B4F461] px-8" onclick="toogleBtn(donationsection, historySection, donationBtn, historyBtn)">Donation</button>
+
+            <button onclick="toogleBtn(historySection, donationsection, historyBtn, donationBtn)" id="historybtn" class="btn bg-[#1111114D] px-8">History</button>
         </div>
     </section>
 
     <!-- Donation Cards -->
-    <section class="my-5 space-y-8">
+    <section class="my-5 space-y-8" id="donationsection">
         <!-- card-1 -->
         <div>
             <div class="card card-side bg-base-100 shadow-xl flex flex-col justify-center items-center lg:flex-row">
@@ -98,17 +99,14 @@
     </section>
 
     <!-- History Section -->
-    <!-- <section>
-        <div class="card bg-base-100 w-96 shadow-xl">
+    <section class="flex justify-center my-10 hidden" id="historySection">
+        <div class="card bg-base-100 w-full shadow-xl">
             <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+            <h2 class="card-title">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
+            <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
             </div>
         </div>
-        </div>
-    </section> -->
+    </section>
 
     <!-- Modal -->
     <section>
